@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Central Tires Receipts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="./calc.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <div class="row">
+                <div class="col-lg-12">
+                        <div class="jumbotron jumbotron-fluid">
+                                <div class="container jumbo-title">
+                                  <h1 class="display-4">Central Tires #1 <i class="fas fa-flag-checkered flag"></i></h1> 
+                                  <p class="lead" >Receipt Calculator</p>
+                                </div>
+                              </div>    
+                </div>
+            </div>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-6 left-side">
+            
+
+            <form>
+                    <div class="form-group row">
+                      <label for = "total" class="col-sm-2 col-form-label">Total Price</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="total" >
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                            <label for="tax-rate" class="col-sm-2 col-form-label">Tax Rate</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="tax-rate" >
+                            </div>
+                          </div>
+                    <div class="form-group row">
+                            <label for="amount" class="col-sm-2 col-form-label">Amount of Tires</label>
+                            <div class="col-sm-10">
+                            <select class="form-control" id="amount">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+            
+                            </select>
+                        </div>
+
+                    </div>
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="type1" value="new" checked>
+                            <label class="form-check-label" for="type1">
+                              New 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="type2" value="used">
+                            <label class="form-check-label" for="type2">
+                              Used
+                            </label>
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                            <div class="row">
+                              <legend class="col-form-label col-sm-2 pt-0">Size</legend>
+                              <div class="col-sm-10">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="size" id="size1" value="small" checked>
+                                  <label class="form-check-label" for="size1">
+                                    Small 
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="size" id="size2" value="large">
+                                  <label class="form-check-label" for="size2">
+                                    Large
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="size" id="size2" value="xlarge">
+                                        <label class="form-check-label" for="size2">
+                                          X-Large
+                                        </label>
+                                      </div>
+                              
+                              </div>
+                            </div>
+                          </fieldset>
+                          <div class="form-group row">
+                                <div class="col-sm-10">
+                                  <button type="submit" id ="calculate" class="btn btn-danger">Calculate</button>
+                                </div>
+                              </div>
+                  </form>
+
+            
+        </div>
+
+        <div class = "col-lg-4 right-side">
+            <p><b>Tax:</b> <span id ="tax"></span></p><br>
+            <p><b>Disposal:</b> <span id = "disposal"></span> </p><br>
+            <p><b>Labor:</b> <span id ="labor"></span> </p> <br>
+            <p><b>Subtotal:</b> <span id = "subtotal"></span></p><br>
+            <p><b>Total: </b> <span id = "grand-total"></span></p>
+        </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
