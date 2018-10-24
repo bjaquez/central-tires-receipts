@@ -24,7 +24,7 @@ $(function () {
                 break;
             case "xlarge":
                 disposal = 10
-                labor = 20
+                labor = 25
                 break;
             default:
                 break;
@@ -44,13 +44,6 @@ $(function () {
         $("#subtotal").text("$" + subtotal.toFixed(2));
         $("#grand-total").text("$" + total);
     })
-
-
-
-
-
-
-
 
 
 
